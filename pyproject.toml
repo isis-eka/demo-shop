@@ -1,0 +1,9 @@
+[project]
+name = "demo-shop"
+version = "0.1.0"
+description = "A tiny shopping cart, used to demo requirements-to-test traceability"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

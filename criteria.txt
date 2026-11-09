@@ -1,0 +1,7 @@
+Given an empty cart, when the shopper adds 2 of an item, then the cart holds 2 of that item.
+Given a cart, when the shopper adds an item with a quantity of 0 or less, then a ValueError is raised and the cart is unchanged.
+Given a cart with a subtotal of $50 or more, when the shopper applies the code SAVE10, then the subtotal drops by 10%.
+Given an expired discount code, when the shopper applies it, then an "expired" error is raised and the subtotal is unchanged.
+Given a discount code that was already used on the cart, when the shopper applies it again, then it is rejected with an error.
+Given a cart with items, when the shopper checks out, then the receipt total is the subtotal plus 9% GST.
+Given an empty cart, when the shopper checks out, then an error is raised and no receipt is created.
